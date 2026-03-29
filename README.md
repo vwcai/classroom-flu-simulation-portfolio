@@ -4,6 +4,8 @@ This repository is a public portfolio version of a Monte Carlo simulation projec
 
 The project compares two outbreak scenarios over 5,000 simulation runs: one with no initial immunity and one with 50% initial immunity. It tracks susceptible, infected, and recovered students over time, along with epidemic duration and early infection counts.
 
+For a business-facing summary of the project, see `PROJECT_SUMMARY.md`.
+
 ## Portfolio Version Note
 
 This public version focuses on the simulation design, implementation, and results. Original course materials and internal project documents are intentionally omitted.
@@ -26,6 +28,7 @@ This public version focuses on the simulation design, implementation, and result
 ## Repository Contents
 
 - `classroom_flu_simulation.ipynb`: cleaned notebook with simulation workflow and outputs
+- `PROJECT_SUMMARY.md`: concise case-study style summary for portfolio review
 - `utils.py`: simulation engine and plotting helpers
 - `sim_1_expected_num_of_accumulated_infections.csv`: exported results for the first scenario
 - `sim_2_expected_num_of_accumulated_infections.csv`: exported results for the second scenario
