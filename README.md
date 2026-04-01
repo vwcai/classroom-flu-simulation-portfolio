@@ -2,28 +2,23 @@
 
 This repository is a public portfolio version of a Monte Carlo simulation project that models flu transmission in a classroom under different immunity assumptions.
 
-The project compares two outbreak scenarios over 5,000 simulation runs: one with no initial immunity and one with 50% initial immunity. It tracks susceptible, infected, and recovered students over time, along with epidemic duration and early infection counts.
+The analysis compares two outbreak scenarios over 5,000 simulation runs and tracks how initial immunity changes infection trajectories, epidemic duration, and total accumulated infections.
 
-For a business-facing summary of the project, see `PROJECT_SUMMARY.md`.
-
-## Portfolio Version Note
+## Public Portfolio Note
 
 This public version focuses on the simulation design, implementation, and results. Original course materials and internal project documents are intentionally omitted.
 
-## Highlights
+## Start Here
 
-- Implements a classroom epidemic simulation in Python
-- Models weekday-only transmission and fixed recovery duration
-- Runs 5,000 Monte Carlo simulations per scenario
-- Compares outbreak trajectories under different initial immunity levels
-- Exports expected accumulated infection counts to CSV
+- `PROJECT_SUMMARY.md`: main case-study style overview
+- `classroom_flu_simulation.ipynb`: selected simulation workflow
+- `utils.py`: simulation engine and plotting helpers
 
-## Selected Findings
+## At a Glance
 
-- With **0% initial immunity**, the mean epidemic duration is about **11.91 days**
-- With **50% initial immunity**, the mean epidemic duration falls to about **6.45 days**
-- Final expected accumulated infections drop from about **12.10** to about **2.90**
-- Higher initial immunity reduces total infections, shortens outbreaks, and lowers early spread
+- Business question: how does initial immunity change outbreak size and duration in a closed, high-contact classroom setting?
+- Methods: stochastic discrete-time individual-based SIR simulation with weekday-only transmission and 5,000 Monte Carlo runs per scenario
+- Headline takeaway: moving from 0% to 50% initial immunity reduced mean outbreak duration from about 11.91 days to 6.45 days and final expected accumulated infections from about 12.10 to 2.90
 
 ## Repository Contents
 
@@ -33,6 +28,10 @@ This public version focuses on the simulation design, implementation, and result
 - `sim_1_expected_num_of_accumulated_infections.csv`: exported results for the first scenario
 - `sim_2_expected_num_of_accumulated_infections.csv`: exported results for the second scenario
 - `requirements.txt`: Python dependencies used in the project
+
+## Data Note
+
+This repository includes selected outputs and code used to illustrate the simulation workflow. Original prompt materials and internal project documents are intentionally omitted.
 
 ## Local Reproduction
 
